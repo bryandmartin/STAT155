@@ -1,216 +1,128 @@
 ---
-title: "HW1"
-subtitle: "Section ?"
-author: "YOUR NAME HERE"
-date: "Due: Friday, November 6"
+title: "Homework 1"
+author: "INSERT YOUR NAME HERE"
+date: "Due Date Here"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, error = TRUE)
-#install.packages('dplyr','readr','ggplot2')
-library(dplyr) 
-library(readr)
-library(ggplot2)
-```
-
-# Instructions
-
-This assignment should be submitted on Moodle as a pdf document by 11:59pm CST on Friday, November 6. You are welcome to work together on the homework; however, what you submit should be your words and your code, so we recommend writing it up individually. 
-
-
-# Part 1. Create and knit an R Markdown file 
-
-We will use `R` and `RStudio` extensively throughout the module, so for this homework assignment I want to make sure that you are able to use `R Markdown` to generate a nicely formatted, reproducible .pdf document containing your homework solutions. 
-
-To complete your assignment, please follow these steps: 
-
-0. Download R and RStudio (if you haven't already). See the *R and RStudio* section on Moodle for installation links and videos with step-by-step installation instructions. **Get started on this part as soon as possible.** If you get stuck, you'll need to reach out to your instructor and/or come to office hours, so plan accordingly!
-
-1. Download `hw1.Rmd` from Moodle and save it some place on your computer that you can easily find again (i.e., NOT in your Downloads folder). **I strongly encourage you to create a new folder dedicated to homework assignments for this class.** See the *File Structure and Organization* video on Moodle for tips on how to do this.
-
-2. Make sure that the file you downloaded is called `hw1.Rmd` and not `hw1.Rmd.txt`. The latter often happens when you use Safari on a Mac---try downloading the file using a different browser (e.g., Chrome) instead, or edit the file name (as explained in the *File Structure and Organization* video).
-
-3. Open `hw1.Rmd` in RStudio. See the *Intro to R and RStudio*, *R Data Types*, and *R Error Messages and Troubleshooting* videos. 
-
-4. Update the section number and author on the third and fourth lines of the file. 
-
-5. Install the `dplyr`, `readr`, and `ggplot2` packages. Depending on how far you've made it in the lecture videos, you might have installed some of these packages already. Open the `Packages` panel (usually in the bottom right corner) to see the list of all packages that are already installed. Look to see if `dplyr`, `readr`, and `ggplot2` are listed here. If they're on this list, that means they're already installed and you're good to go.  If any packages are missing from this list, type `install.packages('packagename')` in the *Console* (usually in the bottom left corner) and hit enter. See the *R Packages* video. 
-
-6. Try *Knitting* your document: click the `Knit` button at the top of this screen (look for yarn and needle).
-    - See the *Intro to RMarkdown* video. 
-    - A dialogue box may pop up asking you if you want to install some packages: click "Yes"
-    - If you encounter any error messages, get in touch with your instructor or the preceptors.  
-
-7. Answer the questions in Parts 2--5. Click `Knit` occasionally along the way to make sure everything looks okay.
-
-8. Once you're done with Parts 2--5, click `Knit` one final time. This will turn your R Markdown document into a nicely formatted HTML file. Look at the file to make sure it looks like you want it to (graphs appearing, no R code errors, no data print out that lasts 50 pages, etc.).
-    
-9. Once your HTML file pops up and you've checked that it looks like what you want, click `Open in Browser` and then Print and select "Save as pdf". You will upload the pdf to Moodle.
-
-To get credit for this problem, turn in two files to Moodle: this `.Rmd` file, and the knitted `.pdf` version you generated in Step 9. 
+<!--- Begin styling code. --->
+<style type="text/css">
+/* Whole document: */
+body{
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 12pt;
+}
+h1.title {
+  font-size: 38px;
+  text-align: center;
+}
+h4.author {
+  font-size: 18px;
+  text-align: center;
+}
+h4.date {
+  font-size: 18px;
+  text-align: center;
+}
+</style>
+<!--- End styling code. --->
 
 
-# Part 2. Background survey 
+To begin, please follow the course links to download R, RStudio, and R Markdown.
+You should edit this .Rmd using RStudio, then click *Knit* in the menu bar of the Source window (above the text of this .Rmd).
+Remember, you must submit *both* your .Rmd and the compiled .html in order to receive full credit!
 
-I want to know a little more about you! Please answer the following questions. Note that there are no "correct" answers to the questions: you'll get credit as long as you put effort into answering each question.
+## Part 1. Written Response
 
-a. What is your preferred name (and, if you'd like to share, what are your pronouns)? Please write a short pronunciation guide for you name (e.g., spell it out phonetically, tell me what it rhymes with, ...).
+**1.** What is the name you want me to call you?
 
-> REPLACE THIS TEXT WITH YOUR ANSWER
+Replace this text with your answer.
 
+**2.** What are your gender pronouns? (Example: mine are he/him/his)
 
-b. What is your year at Macalester?
+Replace this text with your answer.
 
-> REPLACE THIS TEXT WITH YOUR ANSWER
+**3.** What is your major?
 
+Replace this text with your answer.
 
-c. What is (are) your major(s) and minor(s)? If you haven't declared yet, let me know what your passions are right now!
+**4.** What is your coding/computational experience? Please specifically mention whether or not you have any experience in each of R, Rmarkdown, and LaTeX.
 
-> REPLACE THIS TEXT WITH YOUR ANSWER
+Replace this text with your answer.
 
+**5.** In 3 sentences or less, please explain what you hope to take away from this course.
 
-d. What are your career and/or post-graduation ideas or goals? 
+Replace this text with your answer.
 
-> REPLACE THIS TEXT WITH YOUR ANSWER
+**6.** Explain the grading scale of Short Labs in this course.
 
+Replace this text with your answer.
 
-e. Have you taken any previous statistics courses? If so, which classes have you taken and when did you take them?
+**7.** What is the penalty if you submit an assignment 32 hours late?
 
-> REPLACE THIS TEXT WITH YOUR ANSWER
+Replace this text with your answer.
 
+**8.** What percent extra credit is possible in this course, and how do you earn it?
 
-f. Do you have any other prior experience with statistics (e.g., a class in another department, job, research)?
+Replace this text with your answer.
 
-> REPLACE THIS TEXT WITH YOUR ANSWER
+**9.** What time zone will you be in for the duration of this course?
 
+Replace this text with your answer.
 
-g. Do you have any previous computing experience (e.g., Excel, R, Stata, Matlab, C, Python)? If so, in what context?
+**10.** Do my current proposed office hour times work for you? If not, please provide some general availability.
 
-> REPLACE THIS TEXT WITH YOUR ANSWER
+Replace this text with your answer.
 
+<!--- Note: I use the backslash to skip a line for formatting. --->
+\ 
 
-h. Why are you taking this course? What are you hoping to learn/gain from this class? 
+## Part 2. R Code
 
-> REPLACE THIS TEXT WITH YOUR ANSWER
-
-
-i. What do you do when you're not in class? (e.g., are you an athlete? in a musical ensemble? involved in any campus organizations? board game enthusiast?)
-
-> REPLACE THIS TEXT WITH YOUR ANSWER
-
-
-j. Is there anything else you would like me to know about you?
-
-> REPLACE THIS TEXT WITH YOUR ANSWER
-
-
-
-# Part 3. Project
-
-## Question 1 
-
-Look through the information for the possible project data sets on Moodle. Choose one data set to work with. Then, use the code chunk provided below to read your chosen data set into R and look at the `head()` of the data set (i.e., the first six rows). *You can change your mind about the data set for HW 2, but after that, you'll primarily be working with that same data set for the remaining weekly assignments. So, make sure to choose a data set that seems interesting to you!*
+**9a.** Fill in the code below to assign two numeric variables.
 
 ```{r}
-#REPLACE THIS WITH CODE to read and look at data
+# Your code here
 ```
 
-For your chosen data set, describe how many cases there are in the data set, explain what the cases represent, and describe how many variables there are in the data set. Then, choose 10 variables that are interesting to you, list them here, classify each of these 10 variables as either quantitative or categorical, and explain why you classified them in that manner.
-
-> Cases (Who): REPLACE THIS TEXT WITH YOUR ANSWER
-
-> Variables (What): REPLACE THIS TEXT WITH YOUR ANSWER
-
-
-## Question 2 
-
-For your chosen data set, use the information provided to describe the context surrounding the data (where was this data collected, when was this data collected, how was this data collected, by whom was this data collected, why was this data collected). 
-
-> Where: REPLACE THIS TEXT WITH YOUR ANSWER
-
-> When: REPLACE THIS TEXT WITH YOUR ANSWER
-
-> How: REPLACE THIS TEXT WITH YOUR ANSWER
-
-> By whom: REPLACE THIS TEXT WITH YOUR ANSWER
-
-> Why: REPLACE THIS TEXT WITH YOUR ANSWER
-
-
-## Question 3
-
-For your chosen data set, consider the ideal population of interest that you might want to draw conclusions about, and then think about the difference between that ideal population and the data available. In a brief paragraph, describe the ideal population of interest and any sampling biases (who is included and who is excluded?) or information biases (do the values represent the truth?) that might be present in the data available. Use the terminology presented in the online notes and videos. 
-
-> Population of Interest/Sampling Biases: REPLACE THIS TEXT WITH YOUR ANSWER
-
-> Information Biases: REPLACE THIS TEXT WITH YOUR ANSWER
-
-
-## Question 4
-
-For your chosen data set, write down two interesting questions that you might be able to answer based on the data available. In addition to writing down the questions, discuss how the study design (observational data or experiment) may impact the way you can answer those questions with respect to causal inference.   
-
-> Question 1: REPLACE THIS TEXT WITH YOUR ANSWER
-
-> Question 2: REPLACE THIS TEXT WITH YOUR ANSWER
-
-> Impact of Study Design: REPLACE THIS TEXT WITH YOUR ANSWER
-
-
-## Question 5
-
-For your chosen data set, consider who benefits and who may be harmed from this data being collected, this data being publicly available, and the potential ways you might use the data. 
-
-> Benefits: REPLACE THIS TEXT WITH YOUR ANSWER
-
-> Harms: REPLACE THIS TEXT WITH YOUR ANSWER
-
-
-## Question 6
-
-For your chosen data set and possible research questions from Q4, create two separate visualizations (one per question) that help answer the questions. Then, in a brief paragraph, thoroughly describe what information you gain from that visualization. You may use numerical summaries in your paragraph to fully describe your visualization. 
+**9b.** Use object type functions to confirm your variables are numeric.
 
 ```{r}
-#REPLACE THIS WITH CODE for Viz 1
+# Your code here
 ```
 
-> REPLACE THIS TEXT WITH YOUR DESCRIPTION FOR VIZ 1
-
+**10.** Write one line of code that involves an arithmetic operator and both of your variables.
 
 ```{r}
-#REPLACE THIS WITH CODE for Viz 2
+# Your code here
 ```
 
-> REPLACE THIS TEXT WITH YOUR DESCRIPTION FOR VIZ 2
+**11.** Write one line of code that involves a comparison operator, both of your variables, and evaluates to `TRUE`.
 
+```{r}
+# Your code here
+```
 
+**12.** Write one line of code that involves a comparison operator, both of your variables, and evaluates to `FALSE`.
 
-# Part 4. Self-reflection
+```{r}
+# Your code here
+```
 
-After you have finished the assignment, take 5 minutes to think and 10 minutes to free-write in reaction to the following prompts. You do not need to answer every question listed below, but use these questions to guide your writing.  
+**13.** Write one line of code that involves a comparison operator, a logical operator, both of your variables, and evaluates to `TRUE`. Add a comment to explain what your code is doing in words.
 
-Look back at the course and life goals you wrote in Part 2 and reflect on week 1 of this course.
+```{r}
+# Your code here
+```
 
-  * How are you doing as a human being right now? Are you in [survival mode](https://www.youtube.com/watch?feature=share&v=KoqaUANGvpA&app=desktop)? Which of your needs are not being met?
-  * What did you learn this week? Does the work above reflect your learning?
-  * What was the biggest obstacle for your learning this week?
-  * What did you do this week that moved you towards your course and life goals? 
-  * What might you do differently next week? What do you need (from instructor, others, yourself) to do that next week?
-  * Evaluate your project work (Part 3) with respect to the provided rubric. Do you think it meets expectations? Does it exceed expectations?
-  * Evaluate your course engagement with respect to the provided rubric. Do you think it meets expectations? Does it exceed expectations?
+**14.** Write one line of code that involves a comparison operator, a logical operator, both of your variables, and evaluates to `FALSE`. Make each of the operators different than they were in question 13. Add a comment to explain what your code is doing in words.
 
-> REPLACE THIS TEXT WITH YOUR REFLECTION
+```{r}
+# Your code here
+```
 
+**15.** Remove one of your variables from your workspace, then print out your workspace to confirm.
 
-
-# Part 5. Partner Check in
-
-During this time of social distancing, we need to be proactive in initiating and maintaining connections with others. To that end, you will be paired with another student in the class to do an informal weekly check-in with each other. You may do this over email, on Zoom, or from > 6 feet apart, and it doesn't need to be long. This provides you an opportunity to connect with someone and support one another during this time. 
-
-Suggestions: Share a joy and a challenge of this past week. Share a question you've had this week. 
-
-All you need to report here is whether or not you were able to connect with your partner. 
-
-> KEEP RELEVANT TEXT (AND DELETE THE REST): "Checked In" OR "Wasn't Able to Connect"
-
+```{r}
+# Your code here
+```
