@@ -42,7 +42,7 @@ Replace this text with your answer.
 
 Replace this text with your answer.
 
-**3.** What is your major?
+**3.** What is your major or intended major?
 
 Replace this text with your answer.
 
@@ -54,23 +54,11 @@ Replace this text with your answer.
 
 Replace this text with your answer.
 
-**6.** Explain the grading scale of Short Labs in this course.
+**6.** Explain the grading scale of Projects in this course.
 
 Replace this text with your answer.
 
-**7.** What is the penalty if you submit an assignment 32 hours late?
-
-Replace this text with your answer.
-
-**8.** What percent extra credit is possible in this course, and how do you earn it?
-
-Replace this text with your answer.
-
-**9.** What time zone will you be in for the duration of this course?
-
-Replace this text with your answer.
-
-**10.** Do my current proposed office hour times work for you? If not, please provide some general availability.
+**7.** Do my current proposed office hour times work for you? If not, please provide some general availability.
 
 Replace this text with your answer.
 
